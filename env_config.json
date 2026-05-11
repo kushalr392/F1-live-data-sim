@@ -1,0 +1,9 @@
+[
+  {"env_name": "KAFKA_BOOTSTRAP_SERVERS", "variable_type": "String", "mandatory": true, "default_value": null, "about_variable": "Kafka bootstrap server URL"},
+  {"env_name": "KAFKA_TOPIC", "variable_type": "Output Topic", "mandatory": true, "default_value": null, "about_variable": "Main Kafka topic for F1 telematics data"},
+  {"env_name": "KAFKA_DLQ_TOPIC", "variable_type": "Output Topic", "mandatory": true, "default_value": null, "about_variable": "Dead-letter topic for failed messages"},
+  {"env_name": "KAFKA_USERNAME", "variable_type": "String", "mandatory": true, "default_value": null, "about_variable": "SASL username"},
+  {"env_name": "KAFKA_PASSWORD", "variable_type": "Password", "mandatory": true, "default_value": null, "about_variable": "SASL password"},
+  {"env_name": "DATA_INTERVAL", "variable_type": "Float", "mandatory": false, "default_value": "0.5", "about_variable": "Interval between data generation in seconds"},
+  {"env_name": "VEHICLE_ID", "variable_type": "String", "mandatory": false, "default_value": "F1-RED-BULL-01", "about_variable": "Unique ID for the simulated vehicle"}
+]
