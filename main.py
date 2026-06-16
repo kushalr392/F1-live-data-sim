@@ -21,7 +21,7 @@ KAFKA_DLQ_TOPIC = os.getenv("KAFKA_DLQ_TOPIC")
 KAFKA_USERNAME = os.getenv("KAFKA_USERNAME")
 KAFKA_PASSWORD = os.getenv("KAFKA_PASSWORD")
 DATA_INTERVAL = float(os.getenv("DATA_INTERVAL", 0.5))
-VEHICLE_ID = os.getenv("VEHICLE_ID", "F1-RED-BULL-01")
+VEHICLE_ID = os.getenv("VEHICLE_ID")
 
 def on_send_success(record_metadata):
     """ Called on successful message delivery. """
